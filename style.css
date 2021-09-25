@@ -110,7 +110,7 @@
     
         background:yellow;
         
-        height: 650px;
+        height: 4000px;
         text-align:center;
         margin:0;
     }
@@ -120,7 +120,7 @@
     .body {
         padding:0;
         margin:0;
-        height:800px;
+        height:850px;
         background: linear-gradient(yellow, aqua);
         text-align: center;
     }
