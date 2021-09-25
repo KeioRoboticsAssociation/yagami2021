@@ -5,17 +5,21 @@
 .container h1{
     text-align: center;
     font-size: 75px;
+    width:100%;
 }
+
 .header { 
-    
-    background:url(./矢上祭写真2021\ .png) center 120% / 75% no-repeat,
-    yellow;
+    width:100%;
+    background:yellow;
     
     height: 650px;
     text-align:center;
     margin:0;
 }
-
+.header img{
+    
+    width:80%;
+}
 .body {
     padding:0;
     margin:0;
@@ -42,14 +46,14 @@
 }
 
 .movie .left {
-    flex: calc(100% / 4);  
+    flex: 20%;  
     margin-top:103px;
 }
 .movie .left img{
     width:100%
 }
 .movie .box{
-    flex: calc(100% / 2);  
+    flex: 60%;  
     padding-right:auto;
     height:400px;
     
@@ -70,11 +74,14 @@
     height: 100%;
 }
 .movie .right {
-    flex: calc(100% / 4);  
+    flex: 20%;  
     margin-top:103px;
 }
 .movie .right img{
     width:100%
+}
+.alert {
+    text-align:center;
 }
 .bottom {
     margin-top:50px;
@@ -91,7 +98,7 @@
     padding-top:20px;
 }
 
-@media screen and (max-width: 730px){
+@media screen and (max-width: 725px){
     * {
         margin:0;
     }
@@ -101,8 +108,7 @@
     }
     .header { 
     
-        background:url(./矢上祭写真2021\ .png) center 90% / 75% no-repeat,
-        yellow;
+        background:yellow;
         
         height: 650px;
         text-align:center;
@@ -114,35 +120,40 @@
     .body {
         padding:0;
         margin:0;
-        height:700px;
+        height:800px;
         background: linear-gradient(yellow, aqua);
         text-align: center;
     }
     .movie{
-        display: flex;
-        flex-direction: row;
-        margin-top:40px;
         
-        height:300px;
-       
+        margin-top:40px;
+        width:90%;
+        height:400px;
+        text-align: center;
+        margin-right: auto;
+        margin-left:auto;
     }
     .box {
         margin-top:40px;
+        text-align: center;
+        
+    }
+    
+    .box iframe{
+      
+        top: 0;
+        width: 90%;
+        height: 90%;
+        text-align: center;
+        
     }
     .movie .left {
-        flex: calc(100% / 5);  
-        margin-top:103px;
-    }
-    .movie .box{
-        flex: calc(100% / 2);  
-        padding-right:auto;
-        height:400px;
-        
-        
+        display: none;
         
     }
+   
     .movie .right {
-        flex: calc(100% / 5);  
-        margin-top:103px;
+        display: none; 
+        
     }
 }
